@@ -83,8 +83,8 @@ public class Pessoa {
         this.profissao = "Programador";
     }
     public boolean verificaSexo(String sexo){
-        if (sexo.equals("M") || sexo.equals("F")){
-            this.sexo = sexo;
+        if (sexo.equals("m") || sexo.equals("f")){
+            setSexo(sexo);
             return true;
         } else {
             System.out.println("Sexo invalido, tente novamente!");

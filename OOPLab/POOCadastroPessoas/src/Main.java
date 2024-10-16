@@ -12,10 +12,14 @@ public class Main {
     System.out.println("Digite o Sexo :");
     String sexo = sc.next();
 
+    // essa estrutura garante que o sexo seja M ou F
     while (!pessoa.verificaSexo(sexo)){
             System.out.println("Digite o Sexo :");
             pessoa.verificaSexo(sc.next());
-            
+            if (pessoa.verificaSexo(sc.next())){
+                sexo = pessoa.getSexo();
+            }
+
         }
     }
 }
